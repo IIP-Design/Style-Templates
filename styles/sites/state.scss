@@ -8,43 +8,53 @@ $fontHeader: 'EB Garamond', Times, serif;
 
 h1.gpalab-site-specific {
   font-family: $fontHeader;
-  font-size: 36px;
+  font-size: 52px;
   font-weight: 400;
-  line-height: 1.16667;
+  line-height: 58px;
   letter-spacing: -0.75px;
 
-  @media screen and (min-width: 62em) {
-    font-size: 32px;
-    line-height: 1.11538;
+  + .subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media screen and (max-width: 62em) {
+    font-size: 42px;
+    line-height: 48px;
   }
 }
 
 h2.gpalab-site-specific {
   font-family: $fontHeader;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 400;
   letter-spacing: -0.5px;
-  line-height: 42px;
+  line-height: 48px;
 
-  @media (min-width: 48em) {
-    font-size: 32px;
-    line-height: 1.11538;
+  + .subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  @media screen and (max-width: 62em) {
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
 h3.gpalab-site-specific {
-  font-family: $fontBase;
-  font-size: 18px;
+  font-family: $fontHeader;
+  font-size: 36px;
   font-weight: 700;
   letter-spacing: 1px;
-  line-height: 26px;
+  line-height: 42px;
 }
 
 h4.gpalab-site-specific {
   font-family: $fontHeader;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 30px;
   letter-spacing: 1px;
 }
 
@@ -55,6 +65,27 @@ h5.gpalab-site-specific {
   letter-spacing: 1px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+h1.gpalab-site-specific + .subtitle, 
+h2.gpalab-site-specific + .subtitle {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 1rem 2rem 0;
+  display: grid;
+  grid-column: 2 / span 11;
+
+  @media screen and (max-width: 48em) {
+    font-weight: 400;
+  }
+}
+
+.title {
+  font-style: normal;
+  letter-spacing: -0.75px;
+  margin: 4rem 2rem 0;
+  display: grid;
+  grid-column: 2 / span 11;
 }
 
 .gpalab-site-specific > p {
